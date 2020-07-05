@@ -1,0 +1,116 @@
+.appBody{
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.apptitle{
+  font-size: 65px;
+    font-style: oblique;
+    color: #033261;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 4px #336699;
+    text-align: center;
+}
+.tile{
+  /* width: 100%; */
+  border: 1px solid #e6e6e6;
+  box-shadow: 2px 7px 8px 0px #c0c0c0;
+  display: inline-block;
+  height: 350px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10%;
+  position: relative;
+}
+.tileimage{
+width: 100%;
+height: 220px;
+}
+.tilecaption{
+  height: 80px;
+  padding: 5px 5px;
+}
+#root a:first-child{
+  text-decoration: none !important;
+}
+.btnLike{
+  background: -webkit-linear-gradient(#25ead8, #658dd6);
+    text-align: center;
+    height: 25px;
+    width: 90px;
+    border: none;
+    box-shadow: 3px 2px 3px 2px #4d5765;
+    margin-left: 2%;
+}
+.btnDelete{
+  background: -webkit-linear-gradient(#25ead8, #658dd6);
+    text-align: center;
+    height: 25px;
+    width: 90px;
+    border: none;
+    box-shadow: 3px 2px 3px 2px #4d5765;
+    margin-right: 2%;
+    float: right;
+}
+.iconlike{
+  display: none;
+}
+.likes-heart{
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translateX(-50%) translateY(-50%) scale(2);
+  display: block;
+}
+  .like-enter{
+    transition:all .2s;
+    transform: offsets scale(1);
+    opacity: 1;
+  }
+  .like-enter.like-enter-active{
+      transform: offsets scale(5);
+    }
+    .fade-leave.like-leave-active{
+    display: none;
+  }
+
+  .fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .fade-leave {
+    opacity: 1;
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+
+.likes-heart{
+  background: url(http://f.cl.ly/items/3Y373q2Q3J3Y1j203n0m/Bitmap-3.png) center no-repeat;
+  background-size: contain;
+  font-size: 2rem;
+  padding :1rem;
+  position: absolute;
+  color: blue;
+  left: 50%;
+  top :50%;
+  pointer-events: none;
+}
+.detailImg{
+  position: relative;
+  border: 11px solid #c0c0c0;
+  box-shadow: 2px 2px 5px 2px #999;
+  margin-left: 1%;
+  height: 480px;
+  display: inline-block;
+}
+.detailDsc{
+  padding: 25px 10px 25px 30px;
+}
